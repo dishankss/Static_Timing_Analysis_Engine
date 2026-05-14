@@ -30,7 +30,7 @@ The project implements graph-based timing traversal, bilinear LUT interpolation,
 ## Project Structure
 
 ```text
-TimingGraph/
+Static_Timing_Analysis_Engine/
 ├── STA.py
 ├── requirements.txt
 ├── sample_inputs/

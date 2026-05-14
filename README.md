@@ -1,5 +1,3 @@
-# Static_Timing_Analysis_Engine
-Python-based Static Timing Analysis engine for combinational digital circuits using NLDM Liberty models and graph-based timing traversal.
 # TimingGraph: Static Timing Analysis Engine
 
 A Python-based Static Timing Analysis (STA) engine for combinational digital circuits using `.bench` netlists and NLDM Liberty timing models.  
@@ -33,7 +31,7 @@ The project implements graph-based timing traversal, bilinear LUT interpolation,
 
 ```text
 TimingGraph/
-├── phase2.py
+├── STA.py
 ├── requirements.txt
 ├── sample_inputs/
 │   ├── c17.bench
@@ -81,25 +79,25 @@ Validated on benchmark circuits containing:
 ### Generate circuit details
 
 ```bash
-python3.7 phase2.py --read_ckt c17.bench
+python3.7 STA.py --read_ckt c17.bench
 ```
 
 ### Generate delay LUTs
 
 ```bash
-python3.7 phase2.py --read_nldm sample_NLDM.lib --delays
+python3.7 STA.py --read_nldm sample_NLDM.lib --delays
 ```
 
 ### Generate slew LUTs
 
 ```bash
-python3.7 phase2.py --read_nldm sample_NLDM.lib --slews
+python3.7 STA.py --read_nldm sample_NLDM.lib --slews
 ```
 
 ### Run full STA flow
 
 ```bash
-python3.7 phase2.py --read_ckt c17.bench --read_nldm sample_NLDM.lib
+python3.7 STA.py --read_ckt c17.bench --read_nldm sample_NLDM.lib
 ```
 
 ---
